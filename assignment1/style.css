@@ -1,3 +1,28 @@
-h1 {
+@font-face {
+    font-family: "SegoeUI";
+    src: url(fonts/segoeuithibd.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "SegoeUI";
+    src: url(fonts/segoeuithis.ttf) format("truetype");
+    font-weight: normal;
+}
+
+body {
     
+    line-height: 0.5;
+}
+
+h1 {
+    font-family: "SegoeUI";
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "SegoeUI";
+    font-weight: normal;
+    font-size: 30px;
 }
