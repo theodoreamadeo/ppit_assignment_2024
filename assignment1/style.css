@@ -45,8 +45,8 @@ body {
     font-family: "SegoeUI";
     background-color: #ffffff;
     padding: 20px;
-    margin: 60px 120px 20px 120px;
-    max-width: 1000px;
+    margin: 60px auto 20px auto;
+    max-width: 1500px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -71,15 +71,16 @@ body {
     font-family: "SegoeUI";
     background-color: #ffffff;
     padding: 20px;
-    margin: 40px 120px 20px 120px;
-    max-width: 1000px;
+    margin: 40px auto 20px auto;
+    max-width: 1500px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
 .our-skills h2 {
-    font-size: 2rem;
+    font-size: 25px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -92,21 +93,35 @@ body {
 
 .card {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+#html-card {
+    background-color: #dbe9fe;
+}
+
+#css-card {
+    background-color: #dcfce7;
+}
+
+#responsive-card {
+    background-color: #f3e8ff;
+}
+
 .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-family: "SegoeUI";
+    font-weight: bold;
+    font-size: 20px;
+    
 }
 
 .card p {
-    font-size: 1rem;
+    font-size: 18px;
     color: #666;
-    margin: 5px 0;
+    margin: 20px auto;
 }
 
 .progress-bar {
