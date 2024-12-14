@@ -7,16 +7,112 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-    <img class="rounded-full w-40 h-auto mx-auto my-6" src="profile.jpg">
-    <h1 class="font-sans font-bold text-4xl leading-normal text-center">IT GTD Committee Portfolio</h1>
-    <h2 class="font-sans font-normal text-2xl leading-normal text-center text-gray-600">Showcasing Ourskills and Projects</h2>
+    <header class="container mx-auto px-4">
+        <img class="rounded-full size-36 mx-auto my-6" src="profile.jpg">
+        <h1 class="font-sans font-bold text-4xl leading-normal text-center">IT GTD Committee Portfolio</h1>
+        <h2 class="font-sans font-normal text-2xl leading-normal text-center text-gray-600">Showcasing Ourskills and Projects</h2>
+    </header>
+    
+    <main>
+        <section class="container-custom">
+            <h2>About Us</h2>
+            <p>
+                We are the dedicated IT committee of our organization, committed to continuous learning and technological innovation. This portfolio represents our journey of skill development and collaborative growth.
+            </p>
+        </section>
 
-    <section class="bg-white p-5 max-w-screen-2xl rounded-2xl shadow-md" style="margin: 60px auto 20px auto;">
-        <h2 class="font-bold text-2xl mb-4 text-slate-700">About Us</h2>
-        <p>
-            We are the dedicated IT committee of our organization, committed to continuous learning and technological innovation. This portfolio represents our journey of skill development and collaborative growth.
-        </p>
-    </section>
+        <section class="container-custom">
+            <h2>Our Skills</h2>
+            <div class="grid gap-5 p-3" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="p-4 rounded-2xl shadow-md text-center hover:scale-105 shadow-lg transition-all ease-in-out duration-500" style="background-color: #dbe9fe;">
+                    <h3 class="font-bold text-xl">HTML</h3>
+                    <p>Markup Language</p>
+                    <div class="relative bg-white h-2 rounded-md overflow-hidden" style="margin: 10px 0;">
+                        <span class="block h-full rounded-md" style="background-color: #007bff; width: 75%;"></span>
+                    </div>
+                    <p>75% Proficiency</p>
+                </div>
 
+                <div class="p-4 rounded-2xl shadow-md text-center hover:scale-105 shadow-lg transition-all ease-in-out duration-500" style="background-color: #dcfce7;">
+                    <h3 class="font-bold text-xl">CSS</h3>
+                    <p>Styling Techniques</p>
+                    <div class="relative bg-white h-2 rounded-md overflow-hidden" style="margin: 10px 0;">
+                        <span class="block h-full rounded-md" style="background-color: #28a745;; width: 65%;"></span>
+                    </div>
+                    <p>65% Proficiency</p>
+                </div>
+
+                <div class="p-4 rounded-2xl shadow-md text-center hover:scale-105 shadow-lg transition-all ease-in-out duration-500" style="background-color: #f3e8ff;">
+                    <h3 class="font-bold text-xl">Responsive Design</h3>
+                    <p>Mobile-First Approach</p>
+                    <div class="relative bg-white h-2 rounded-md overflow-hidden" style="margin: 10px 0;">
+                        <span class="block h-full rounded-md" style="background-color: #6f42c1; width: 50%;"></span>
+                    </div>
+                    <p>50% Proficiency</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-custom">
+            <h2>Project Showcase</h2>
+            <div class="grid-container flex flex-row gap-4">
+                <div class = "bg-slate-50 p-4 rounded-2xl shadow-md text-left">
+                    <h4 class="font-bold mb-4">Web Development Workshop</h4>
+                    <p class="mb-4">A workshop where we learned HTML5 semantic structure, CSS flexbox, and responsive design principles.</p>
+                    <p>&#128187 Completed: December 2024</p>
+                </div>
+                <div class = "bg-slate-50 p-4 rounded-2xl shadow-md text-left">
+                    <h4 class="font-bold mb-4">Network Security Seminar</h4>
+                    <p class="mb-4">A seminar exploring cybersecurity practices and the latest trends in IT infrastructure protection.</p>
+                    <p>🛡️ Completed: December 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-custom">
+            <h2>Timeline of Learning</h2>
+            <div class="flex flex-row">
+                <div class="w-1 h-40" style="background-color: #c1bebe; margin: 15px 0px 0px 0px;"></div>
+                <div class="grid-container flex flex-col ml-12">
+                    <div>
+                        <h4 class="font-bold">HTML Basics</h4>
+                        <p class="mb-4">November 2024: Learned fundamental HTML structure and tags</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold">CSS Styling</h4>
+                        <p class="mb-4">December 2024: Mastered CSS selectors and layout techniques</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold">Responsive Design</h4>
+                        <p class="mb-4">December 2024: Explored mobile-first design and media queries</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-custom">
+            <h2>Contact</h2>
+            <form class="leading-loose">
+                <label for="your-name">Name</label><br>
+                <input type ="text" class="p-2 h-7 rounded-lg border-2 border-custom-gray" style="width: 1490px;" name="your-name" placeholder="Your Name" required><br>
+                <label for="your-email">Email</label><br>
+                <input type ="email" class="p-2 h-7 rounded-lg border-2 border-custom-gray" style="width: 1490px;" name="your-email" placeholder="Your Email" required><br>
+                <label for="your-message">Message</label><br>
+                <textarea name="your-message" class="p-2 rounded-lg border-2 border-custom-gray h-24" style="width: 1490px;" cols="30" rows="10" placeholder="Your Message" required></textarea><br>
+                <input type="submit" class="bg-cyan-400 text-base text-white rounded-md cursor-pointer hover:bg-black" style="padding: 10px 20px;" value="Send Message" id="submit-button">
+            </form>
+        </section>
+
+        <section class = "bg-cyan-400 w-max text-white border-none rounded-md cursor-pointer text-base hover:bg-black" style="padding: 10px 20px; margin-left: 500px;">
+            <button id = back-to-home>Back To Home</button>
+        </section>
+    </main>
 </body>
+
+<footer class="text-sm text-center" style="margin: 50px auto 50px auto; color:#737272;">
+    <p>© 2024 IT GTD Committee Portfolio. All rights reserved.</p>
+</footer>
+
 </html>
