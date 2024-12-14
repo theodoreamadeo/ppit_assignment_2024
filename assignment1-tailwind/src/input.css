@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h2 {
+        @apply font-bold text-2xl mb-4 text-slate-700;
+    }
+
+    p{
+        @apply text-slate-700 text-lg m-7;
+    }
+
+    h3{
+        @apply font-bold text-xl;
+    }
+}
+
+@layer components {
+    .container-custom {
+        @apply bg-white p-5 max-w-screen-2xl rounded-2xl shadow-md; 
+        margin: 30px auto;
+    }
+
+    .grid-container {
+        @apply grid gap-5 p-2.5;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
