@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="profile.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 flex flex-col items-center justify-center h-screen">
+    <main class="bg-white p-5 max-w-screen-md rounded-2xl shadow-md space-y-6 text-center">
+        <div>
+            <h1 class="font-sans font-bold text-3xl">Simple Counter App</h1>
+            <div class="bg-gray-200 p-5 mt-10 max-w-screen-md rounded-md shadow-md text-center">
+                <p class="text-xl">Current Count: <span id ="counter-display">0</span></p>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-center gap-5 p-3">
+            <button class="bg-blue-400 w-20 h-10 rounded-md text-white hover:bg-blue-500" id="increase-button">Increase</button>
+            <button class="bg-blue-400 w-20 h-10 rounded-md text-white hover:bg-blue-500" id="decrease-button">Decrease</button>
+            <button class="bg-blue-400 w-20 h-10 rounded-md text-white hover:bg-blue-500" id="reset-button">Reset</button>
+        </div>
+        <span id="alert-system"></span>
+    </main>
+    <button class="mt-8 bg-blue-400 text-white w-40 h-10 rounded-md hover:bg-blue-500">Back To Home</button>
+
+    <script src="counter.js"></script>
+</body>
+</html>
